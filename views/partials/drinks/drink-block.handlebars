@@ -1,0 +1,9 @@
+<li>
+	{{drink_name}}
+{{#if drink_up}}
+	<button class="drink-up" data-id="{{id}}" data-newdrink="{{drink_up}}">
+		Drink Up!
+	</button>
+{{/if}}
+	<button class="delete-drink" data-id="{{this.id}}">Drain...</button>
+</li>

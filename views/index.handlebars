@@ -1,0 +1,30 @@
+<h1>Drink-Da-Drink</h1>
+
+<h2>Drinks to try</h2>
+
+<ul>
+  {{#each drinks}}
+    {{#unless drink_up}}
+      {{> drinks/drink-block drink_up=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Drinks that are drank</h2>
+
+<ul>
+  {{#each drinks}}
+    {{#if drink_up}}
+      {{> drinks/drink-block drink_up=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a drink</h2>
+<form class="create-form">
+  <div class="form-group">
+    <label for="drink">Drink Name:</label>
+    <input type="text" id="drink" name="drink_name">
+      <button type="submit">Add Drink</button>
+  </div>
+</form>
