@@ -18,4 +18,4 @@ In this project, I created a drink logger with MySQL, Node.js, Exress.js, Handle
 
 Deployed link: https://drink-da-drink.herokuapp.com
 
-![Drink-Da-Drink] (public/assets/img/drink-da-drink.png)
+![Drink-Da-Drink](public/assets/img/drink-da-drink.png)
