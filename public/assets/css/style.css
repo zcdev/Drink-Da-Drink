@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 body{
   font-family: 'Special Elite', cursive;
-  background-image: url('../img/drinks.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #7bcab3; 
   height: 100vh;
 }
 
@@ -22,11 +19,12 @@ ul {
 li {
   padding: 0.5rem;
   margin: 0.5rem;
-  background: #000;
   color: #fff;
   display: inline-block;
   font-size: 1.8rem;
   line-height: 1.2;
+  width: 200px;
+  height: 200px;
 }
 
 .label {
@@ -52,6 +50,135 @@ button {
   background-color: #fff;
   color: #000;
 }
+
+.glass {
+  width: 180px;
+  height: 180px;
+}
+
+.drink {
+  width: 180px;
+  height: 180px;
+}
+
+.drinkup {
+  animation-name: drinkup;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.drank .drink .liquor {
+  display: none;
+}
+
+@keyframes drinkup {
+  from {height: 100%; top: -180px;}
+  to {height: 0; top: 0;}
+}
+
+.drink1 {
+  background-image: url('../img/drink1.png');
+  background-repeat: no-repeat;
+  width: 180px;
+  z-index: 2;
+}
+
+.drink1 + div {
+  background-color: #f68f7f;
+  width: 180px;
+  height: 180px;
+  display: block;
+  z-index: -2;
+  position: relative;
+  top: -180px;
+}
+
+.drink2 {
+  background-image: url('../img/drink2.png');
+  background-repeat: no-repeat;
+  width: 180px;
+  z-index: 2;
+}
+
+.drink2 + div {
+  background-color: #abaad5;
+  width: 180px;
+  height: 180px;
+  display: block;
+  z-index: -2;
+  position: relative;
+  top: -180px;
+}
+
+.drink3 {
+  background-image: url('../img/drink3.png');
+  background-repeat: no-repeat;
+  width: 180px;
+  z-index: 2;
+}
+
+.drink3 + div {
+  background-color: #cdde5c;
+  width: 180px;
+  height: 180px;
+  display: block;
+  z-index: -2;
+  position: relative;
+  top: -180px;
+}
+
+.drink4 {
+  background-image: url('../img/drink4.png');
+  background-repeat: no-repeat;
+  width: 180px;
+  z-index: 2;
+}
+
+.drink4 + div {
+  background-color: #fecf8e;
+  width: 180px;
+  height: 180px;
+  display: block;
+  z-index: -2;
+  position: relative;
+  top: -180px;
+}
+
+.drink5 {
+  background-image: url('../img/drink5.png');
+  background-repeat: no-repeat;
+  width: 180px;
+  z-index: 2;
+}
+
+.drink5 + div {
+  background-color: #e6a3c9;
+  width: 180px;
+  height: 180px;
+  display: block;
+  z-index: -2;
+  position: relative;
+  top: -180px;
+}
+
+.drink6 {
+  background-image: url('../img/drink6.png');
+  background-repeat: no-repeat;
+  width: 180px;
+  z-index: 2;
+}
+
+.drink6 + div {
+  background-color: #8caedc;
+  width: 180px;
+  height: 180px;
+  display: block;
+  z-index: -2;
+  position: relative;
+  top: -180px;
+}
+
 
 @media screen and (max-width: 480px) {
   li {
