@@ -45,7 +45,10 @@ input {
 }
 
 button {
+  padding: 0.5rem;
   font-size: 1rem;
+  border: 1px solid #999;
+  margin: 1rem;
   border-radius: 0.5rem;
   background-color: #fff;
   color: #000;
@@ -179,9 +182,16 @@ button {
   top: -180px;
 }
 
+.add {
+  padding: 1rem;
+}
+
 
 @media screen and (max-width: 480px) {
   li {
   font-size: 1rem;
+  }
+  ul {
+    margin: 0 auto;
   }
 }
