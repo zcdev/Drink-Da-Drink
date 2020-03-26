@@ -1,11 +1,5 @@
 $(function() {
 
-  var drinkClasses = ['drink1', 'drink2', 'drink3', 'drink4', 'drink5', 'drink6'];
-  $(".glass").each(function(event){
-      classIndex = Math.floor(Math.random() * drinkClasses.length);
-      $(this).addClass(drinkClasses[classIndex]);
-  })
-
   $(".drink-up").on("click", function(event) {
     var id = $(this).data("id");
     var drinkUp = $(this).data("newdrink");
@@ -31,9 +25,11 @@ $(function() {
 
   $(".create-form").on("submit", function(event) {
     event.preventDefault();
-
+    var drinkClasses = ['drink1', 'drink2', 'drink3', 'drink4', 'drink5', 'drink6'];
+    classIndex = Math.floor(Math.random() * drinkClasses.length);
     var newDrink = {
-      drink_name: $("#drink").val().trim()
+      drink_name: $("#drink").val().trim(),
+      drink_color: "drink" + classIndex
     };
 
     $.ajax("/api/drinks", {

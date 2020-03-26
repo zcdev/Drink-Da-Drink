@@ -16,9 +16,9 @@ router.get("/", function(req, res) {
 
 router.post("/api/drinks", function(req, res) {
   drink.create([
-    "drink_name", "drink_up"
+    "drink_name", "drink_up", "drink_color"
   ], [
-    req.body.drink_name, req.body.drink_up
+    req.body.drink_name, req.body.drink_up, req.body.drink_color
   ], function(result) {
     res.json({ id: result.insertId });
   });
